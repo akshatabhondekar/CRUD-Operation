@@ -1,0 +1,72 @@
+<div class="container">
+  <h1>contact works!</h1>
+  <form [formGroup]="usersForm">
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name" formControlName="First_name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last name" formControlName="Last_name">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="email">Email address</label>
+        <input type="email" class="form-control" id="email" formControlName="Email_address">
+      </div>
+      <br><br>
+      <div>
+        <p>{{name}}</p>
+        <button (click)="SignIn()" app-contact class="btn btn-warning">Sign In</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Sample HTML Table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Brand</th>
+                <th>Category</th>
+                <th>Description</th>
+            </tr>
+            <tr *ngFor="let item of usersData">
+              <td>{{item.id}}</td>
+              <td>{{item.brand}}</td>
+              <td>{{item.category}}</td>
+              <td>{{item.description}}</td>
+            </tr>
+        </thead>
+       
+      
+    </table>
+
+</body>
+</html> -->
